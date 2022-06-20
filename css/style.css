@@ -1,0 +1,124 @@
+/* 폰트 넣어주기 */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  /* 마우스 롤오버 애니메이션 트랜지션 */
+  transition: 0.5s;
+}
+/* a태그 기본 초기화 */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Container & Body */
+body {
+  font-family: "Indie Flower", cursive;
+}
+.container {
+  /* 웹사이트의 전체 컨텐츠의 너비를 1200px로 고정 */
+  width: 1200px;
+  /* 웹사이트 컨텐츠 전체를 가운데 정렬 */
+  margin: auto;
+}
+
+/* Header */
+header {
+  /* 헤더 높이 100px */
+  height: 100px;
+}
+
+/* 로고와 메뉴 클래스의 공통적인 속성 넣어주기 */
+header div {
+  /* 헤더 안에 로고와 메뉴 클래스 높이 100px */
+  height: 100px;
+  /* 헤더 안에 로고와 메뉴 클래스 수직 가운데 정렬 */
+  display: flex;
+  align-items: center;
+}
+
+/* 헤더 로고 */
+.header_logo {
+  /* 헤더로고 왼쪽 정렬 */
+  float: left;
+  animation: blink 10s linear infinite;
+}
+
+/* 헤더 로고 마우스 롤오버시 */
+.header_logo a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* 메뉴 박스 */
+.menu {
+  /* 메뉴 오른쪽 정렬 */
+  float: right;
+}
+
+/* 메뉴 요소 */
+.menu a {
+  /* 메뉴 요소들 안쪽 여백 */
+  padding: 20px;
+}
+
+/* 메뉴 요소 마우스 롤오버시 */
+.menu a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Contents */
+.contents {
+}
+
+/* 컨텐츠 박스를 채우는 이미지 */
+.contents img {
+  /* 이미지를 컨텐츠 박스 크기에 맞추기 */
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  /* 푸터 높이 100px */
+  height: 100px;
+}
+
+/* 푸터 안에 푸터 로고와 카피라이트 박스 공통속성 주기 */
+footer div {
+  height: 100px;
+  /* 푸터 안에 로고와 카피라이트 수직 가운데 정렬 */
+  display: flex;
+  align-items: center;
+}
+
+/* 푸터 로고 */
+.footer_logo {
+  /* 푸터 로고 왼쪽 정렬 */
+  float: left;
+}
+
+/* 푸터 로고 마우스 롤오버시 */
+.footer_logo a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 카피라이트 박스 */
+.copyright {
+  /* 카피라이트 오른쪽 정렬 */
+  float: right;
+}
+
+/*Animation*/
+
+@keyframes blink {
+  0% {
+  }
+  100% {
+     transform: rotate(360deg);
+  }
+}
